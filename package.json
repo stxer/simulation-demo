@@ -1,0 +1,19 @@
+{
+  "name": "stxer-simulation-demo",
+  "private": true,
+  "scripts": {
+    "start": "tsx info.ts",
+    "simulate": "tsx index.ts"
+  },
+  "dependencies": {
+    "@stacks/network": "^6.16.0",
+    "@stacks/stacks-blockchain-api-types": "^7.13.2",
+    "@stacks/transactions": "^6.16.1",
+    "c32check": "^2.0.0",
+    "ts-clarity": "^0.0.26",
+    "tsx": "^4.16.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
