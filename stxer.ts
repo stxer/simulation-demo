@@ -182,10 +182,10 @@ export class SimulationBuilder {
     });
     return this;
   }
-  public addMapRead(contract_id: string, map: string) {
+  public addMapRead(contract_id: string, map: string, key: string) {
     this.steps.push({
       contract_id,
-      code: `(map-get ${map})`,
+      code: `(map-get ${map} ${key})`,
     });
     return this;
   }
@@ -307,7 +307,7 @@ To get in touch: contact@stxer.xyz
     }
     const id = await runSimulation(block.block_hash, block.block_height, txs);
     console.log(
-      `Simulation will be available at: https://stxer.xyz/simulations/${id}`
+      `Simulation will be available at: https://stxer.xyz/simulations/mainnet/${id}`
     );
     return id;
   }

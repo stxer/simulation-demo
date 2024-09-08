@@ -1,3 +1,12 @@
+/***
+ * You can access the simulation demo at https://stxer.xyz/simulations,
+ * along with a link to a pre-run simulation result: https://stxer.xyz/simulations/00000000000000000000000000000101.
+ *
+ * This demo showcases the full capabilities of the simulation API.
+ * Feel free to fork and modify it to create your own custom version.
+ */
+
+import fs from 'node:fs';
 import { boolCV } from '@stacks/transactions';
 import { SimulationBuilder } from './stxer';
 
@@ -17,12 +26,7 @@ SimulationBuilder.new()
   .withSender('SP212Y5JKN59YP3GYG07K3S8W5SSGE4KH6B5STXER')
   .addContractDeploy({
     contract_name: 'test',
-    // or read the source code from local file system
-    source_code: [
-      '(define-data-var enabled bool false)',
-      '(define-read-only (get-enabled) (var-get enabled))',
-      '(define-public (set-enabled (v bool)) (begin (var-set enabled v) (ok v)))',
-    ].join('\n'),
+    source_code: fs.readFileSync('demo.clar', 'utf8'),
     // or omit this to use 0 fee, it's possible for simulation
     fee: 100,
   })
