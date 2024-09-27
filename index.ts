@@ -1,6 +1,6 @@
 /***
  * You can access the simulation demo at https://stxer.xyz/simulations,
- * along with a link to a pre-run simulation result: https://stxer.xyz/simulations/00000000000000000000000000000101.
+ * along with a link to a pre-run simulation result: https://stxer.xyz/simulations/mainnet/00000000000000000000000000000101.
  *
  * This demo showcases the full capabilities of the simulation API.
  * Feel free to fork and modify it to create your own custom version.
