@@ -20,16 +20,19 @@ importers:
       c32check:
         specifier: ^2.0.0
         version: 2.0.0
+      stxer:
+        specifier: ^0.1.0
+        version: 0.1.0(typescript@5.6.2)
       ts-clarity:
         specifier: ^0.0.26
-        version: 0.0.26(typescript@5.5.4)
+        version: 0.0.26(typescript@5.6.2)
       tsx:
-        specifier: ^4.19.0
-        version: 4.19.0
+        specifier: ^4.19.1
+        version: 4.19.1
     devDependencies:
       typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
+        specifier: ^5.6.2
+        version: 5.6.2
 
 packages:
 
@@ -199,11 +202,11 @@ packages:
   '@stacks/transactions@6.16.1':
     resolution: {integrity: sha512-yCtUM+8IN0QJbnnlFhY1wBW7Q30Cxje3Zmy8DgqdBoM/EPPWadez/8wNWFANVAMyUZeQ9V/FY+8MAw4E+pCReA==}
 
-  '@types/bn.js@5.1.5':
-    resolution: {integrity: sha512-V46N0zwKRF5Q00AZ6hWtN0T8gGmDUaUzLWQvHFo5yThtVwK/VCenFY3wXVbOvNfajEpsTfQM4IN9k/d6gUVX3A==}
+  '@types/bn.js@5.1.6':
+    resolution: {integrity: sha512-Xh8vSwUeMKeYYrj3cX4lGQgFSF/N03r+tv4AiLl1SucqV+uTQpxRcnM8AkXKHwYP9ZPXOYXRr2KPXpVlIvqh9w==}
 
-  '@types/node@18.19.50':
-    resolution: {integrity: sha512-xonK+NRrMBRtkL1hVCc3G+uXtjh1Al4opBLjqVmipe5ZAaBYWW6cNAiBVZ1BvmkBhep698rP3UM3aRAdSALuhg==}
+  '@types/node@18.19.53':
+    resolution: {integrity: sha512-GLxgUgHhDKO1Edw9Q0lvMbiO/IQXJwJlMaqxSGBXMpPy8uhkCs2iiPFaB2Q/gmobnFkckD3rqTBMVjXdwq+nKg==}
 
   base-x@4.0.0:
     resolution: {integrity: sha512-FuwxlW4H5kh37X/oW59pwTzzTKRzfrrQwhmyspRM7swOEZcHtDZSCt45U6oKgtuFE+WYPblePMVIPR4RZrh/hw==}
@@ -236,8 +239,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  get-tsconfig@4.8.0:
-    resolution: {integrity: sha512-Pgba6TExTZ0FJAn1qkJAjIeKoDJ3CsI2ChuLohJnZl/tTU8MVrq3b+2t5UOPfRa4RMsorClBjJALkJUMjG1PAw==}
+  get-tsconfig@4.8.1:
+    resolution: {integrity: sha512-k9PN+cFBmaLWtVz29SkUoqU5O0slLuHJXt/2P+tMVFT+phsSGXGkp9t3rQIqdz0e+06EHNGs3oM6ZX1s2zHxRg==}
 
   lodash.clonedeep@4.5.0:
     resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
@@ -254,19 +257,23 @@ packages:
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
+  stxer@0.1.0:
+    resolution: {integrity: sha512-K0YK6TIAMBfGH2p+bASmqoDKm/wbgOQLGd4kCE35kn3CqW/Gq7z7PT2e60dLok83d6opvjHXrz/aHEgVVkMrcA==}
+    engines: {node: '>=12'}
+
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
   ts-clarity@0.0.26:
     resolution: {integrity: sha512-XRwLquuSTDkw6iYEpznMEEgehqaIR9t313chiiZTfvtRCq/kWYXPHQhgdTw6wJBAHsqdVPuN69enwlKtu2IQPg==}
 
-  tsx@4.19.0:
-    resolution: {integrity: sha512-bV30kM7bsLZKZIOCHeMNVMJ32/LuJzLVajkQI/qf92J2Qr08ueLQvW00PUZGiuLPP760UINwupgUj8qrSCPUKg==}
+  tsx@4.19.1:
+    resolution: {integrity: sha512-0flMz1lh74BR4wOvBjuh9olbnwqCPc35OOlfyzHba0Dc+QNUeWX/Gq2YTbnwcWPO3BMd8fkzRVrHcsR+a7z7rA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  typescript@5.5.4:
-    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -361,8 +368,8 @@ snapshots:
 
   '@stacks/common@6.16.0':
     dependencies:
-      '@types/bn.js': 5.1.5
-      '@types/node': 18.19.50
+      '@types/bn.js': 5.1.6
+      '@types/node': 18.19.53
 
   '@stacks/network@6.16.0':
     dependencies:
@@ -384,11 +391,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@types/bn.js@5.1.5':
+  '@types/bn.js@5.1.6':
     dependencies:
-      '@types/node': 18.19.50
+      '@types/node': 18.19.53
 
-  '@types/node@18.19.50':
+  '@types/node@18.19.53':
     dependencies:
       undici-types: 5.26.5
 
@@ -399,9 +406,9 @@ snapshots:
       '@noble/hashes': 1.5.0
       base-x: 4.0.0
 
-  clarity-abi@0.0.20(typescript@5.5.4):
+  clarity-abi@0.0.20(typescript@5.6.2):
     optionalDependencies:
-      typescript: 5.5.4
+      typescript: 5.6.2
 
   cross-fetch@3.1.8:
     dependencies:
@@ -445,7 +452,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  get-tsconfig@4.8.0:
+  get-tsconfig@4.8.1:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -457,26 +464,37 @@ snapshots:
 
   resolve-pkg-maps@1.0.0: {}
 
+  stxer@0.1.0(typescript@5.6.2):
+    dependencies:
+      '@stacks/network': 6.16.0
+      '@stacks/stacks-blockchain-api-types': 7.14.1
+      '@stacks/transactions': 6.16.1
+      c32check: 2.0.0
+      ts-clarity: 0.0.26(typescript@5.6.2)
+    transitivePeerDependencies:
+      - encoding
+      - typescript
+
   tr46@0.0.3: {}
 
-  ts-clarity@0.0.26(typescript@5.5.4):
+  ts-clarity@0.0.26(typescript@5.6.2):
     dependencies:
       '@stacks/stacks-blockchain-api-types': 7.14.1
       '@stacks/transactions': 6.16.1
-      clarity-abi: 0.0.20(typescript@5.5.4)
+      clarity-abi: 0.0.20(typescript@5.6.2)
       cross-fetch: 4.0.0
     transitivePeerDependencies:
       - encoding
       - typescript
 
-  tsx@4.19.0:
+  tsx@4.19.1:
     dependencies:
       esbuild: 0.23.1
-      get-tsconfig: 4.8.0
+      get-tsconfig: 4.8.1
     optionalDependencies:
       fsevents: 2.3.3
 
-  typescript@5.5.4: {}
+  typescript@5.6.2: {}
 
   undici-types@5.26.5: {}
 

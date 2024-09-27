@@ -1,4 +1,4 @@
-console.log(
+process.stdout.write(
   `--------------------------------
 This product can never exist without your support!
 

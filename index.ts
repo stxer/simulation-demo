@@ -8,7 +8,7 @@
 
 import fs from 'node:fs';
 import { boolCV } from '@stacks/transactions';
-import { SimulationBuilder } from './stxer';
+import { SimulationBuilder } from 'stxer';
 
 SimulationBuilder.new()
   // or omit this to use tip height
